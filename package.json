@@ -10,7 +10,7 @@
     "predev": "cp slides/${npm_config_doc}.md ./"
   },
   "dependencies": {
-    "@slidev/cli": "^0.36.5",
+    "@slidev/cli": "^0.29.2",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
     "slidev-theme-penguin": "^1.4.1"
