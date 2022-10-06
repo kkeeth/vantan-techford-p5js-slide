@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "vite-svg-loader": "^3.6.0"
   }
 }
