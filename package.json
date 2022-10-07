@@ -5,9 +5,8 @@
     "build": "slidev build",
     "build-all": "rimraf dist && sh build.sh",
     "serve": "slidev --open",
-    "dev": "slidev --open ${npm_config_doc}.md",
-    "export": "slidev export",
-    "predev": "cp slides/${npm_config_doc}.md ./"
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.29.2",
