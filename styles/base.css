@@ -1,9 +1,9 @@
 :not(pre) > code {
-  background-color: #e3e3e3;
+  background-color: #a0a0a0;
   color: #EB5757 !important;
 }
 
 pre {
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
   border-radius: 4px;
 }
