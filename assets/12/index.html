@@ -1,0 +1,105 @@
+<body>
+  <button>Change color</button>
+
+  <div>
+    <input type="text" placeholder="please type any text" />
+    <input type="password" />
+    <input type="email" placeholder="dummy@example.com" />
+    <input type="tel" placeholder="090-xxxx-xxxx" />
+    <input type="number" placeholder="090-xxxx-xxxx" />
+  </div>
+
+  <input type="submit" />
+
+  <div>
+    <label for="check1">check1</label>
+    <input type="checkbox" id="check1" value="1" checked />
+    <label for="check2">check2</label>
+    <input type="checkbox" id="check2" value="2" />
+    <label for="check3">check3</label>
+    <input type="checkbox" id="check3" value="3" />
+  </div>
+
+  <div>
+    <label for="check1">check1</label>
+    <input type="radio" id="check1" value="1" name="check" />
+    <label for="check2">check2</label>
+    <input type="radio" id="check2" value="2" name="check" />
+    <label for="check3">check3</label>
+    <input type="radio" id="check3" value="3" name="check" checked />
+  </div>
+
+  <input type="date" placeholder="yyyy/mm/dd" />
+
+  <input type="range" min="0" max="100" value="90" step="10" />
+
+  <form action="" method="get">
+    <!-- 省略 -->
+
+    <button type="button">submit</button>
+
+    <!-- または -->
+
+    <input type="submit" value="" />
+  </form>
+
+  <select>
+    <option>select options</option>
+    <option value="1">option1</option>
+    <option value="2">option2</option>
+    <option value="3">option3</option>
+  </select>
+
+  <hr />
+
+  <form>
+    <div>
+      <label for="fname">First name: </label>
+      <input id="fname" type="text" />
+    </div>
+    <div>
+      <label for="lname">Last name: </label>
+      <input id="lname" type="text" />
+    </div>
+    <div>
+      <input id="submit" type="submit" />
+    </div>
+  </form>
+  <p style="color: red"></p>
+
+  <script>
+    // button要素の DOM を取得
+    const btn = document.querySelector("button");
+
+    const random = (number) => {
+      return Math.floor(Math.random() * (number + 1));
+    };
+
+    // ここでイベントハンドラをセット
+    // btn.onclick = function () {
+    //   const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    //   document.body.style.backgroundColor = rndCol;
+    // };
+
+    // こう書いても良い
+    const bgChange = () => {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+      document.body.style.backgroundColor = rndCol;
+    };
+
+    // ここでイベントハンドラをセット
+    btn.addEventListener("click", bgChange);
+
+    const form = document.querySelector("form");
+    const fname = document.getElementById("fname");
+    const lname = document.getElementById("lname");
+    const para = document.querySelector("p");
+
+    form.onsubmit = (e) => {
+      if (fname.value === "" || lname.value === "") {
+        e.preventDefault();
+        para.textContent = "You need to fill in both names!";
+      }
+    };
+  </script>
+</body>
