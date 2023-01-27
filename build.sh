@@ -13,5 +13,6 @@ cp slides/11.md ./ && slidev build -o dist/11 --base /11/ 11.md && rm 11.md
 cp slides/12.md ./ && slidev build -o dist/12 --base /12/ 12.md && rm 12.md
 cp slides/13.md ./ && slidev build -o dist/13 --base /13/ 13.md && rm 13.md
 cp slides/14.md ./ && slidev build -o dist/14 --base /14/ 14.md && rm 14.md
+cp slides/15.md ./ && slidev build -o dist/15 --base /15/ 15.md && rm 15.md
 
 cp index.html dist/index.html
