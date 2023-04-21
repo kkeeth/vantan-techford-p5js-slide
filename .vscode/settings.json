@@ -1,8 +1,9 @@
 {
   "github.copilot.inlineSuggest.enable": true,
   "github.copilot.enable": {
-      "*": false,
-      "html": true,
-      "md": true
-  }
+    "*": false,
+    "html": true,
+    "md": true
+  },
+  "vue.features.codeActions.enable": false
 }
