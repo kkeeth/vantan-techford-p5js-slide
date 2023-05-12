@@ -1,3 +1,6 @@
+# 全スライドのベースにならないように回避
+mv index.html top.html
+
 # 全部ビルド
 cp slides/1.md ./ && slidev build -o dist/1 --base /1/ 1.md && rm 1.md
 cp slides/2.md ./ && slidev build -o dist/2 --base /2/ 2.md && rm 2.md
@@ -18,5 +21,7 @@ cp slides/16.md ./ && slidev build -o dist/16 --base /16/ 16.md && rm 16.md
 cp slides/17.md ./ && slidev build -o dist/17 --base /17/ 17.md && rm 17.md
 cp slides/18.md ./ && slidev build -o dist/18 --base /18/ 18.md && rm 18.md
 
-cp index.html dist/index.html
-cp styles/* dist/assets
+# TOP ページ用
+cp top.html dist/index.html
+cp -R styles dist
+mv top.html index.html
