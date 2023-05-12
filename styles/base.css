@@ -1,3 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: josefin sans, Futura;
+}
+
+header {
+  justify-content: center;
+  place-items: center;
+  padding: 1rem 3rem;
+}
+
+nav {
+  margin-bottom: 0;
+  max-width: 120px;
+}
+
+
+/**
+ * News
+ */
+section.news {
+  padding: 1rem 3rem;
+  background: #efefef;
+}
+
+section.news .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+section.news mark {
+  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+}
+
+section.news .text {
+  margin-left: 1rem;
+}
+
+section.news .jump-icon i {
+  border: none;
+}
+
+
+/**
+ * Detail
+ */
+section.detail {
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  padding: 0 3rem;
+}
+section.detail::before {
+  background-image: url(/assets/cover.png);
+  background-size: contain;
+  position: absolute;
+  content: "";
+  filter: blur(6px);
+  opacity: .3;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+
+section.detail .container {
+  display: flex;
+  align-items: center;
+}
+
+section.detail .container .badge {
+  text-transform: uppercase;
+}
+
+
+/**
+ * Lists
+ */
+section.list {
+
+}
+
 :not(pre) > code {
   background-color: #e3e3e3;
   color: #EB5757 !important;
