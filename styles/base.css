@@ -86,7 +86,7 @@ section.detail .container .badge {
  * Lists
  */
 section.list {
-
+  padding: .5rem 3rem;
 }
 
 :not(pre) > code {
