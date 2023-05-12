@@ -1,6 +1,8 @@
 {
   "rewrites": [
     { "source": "/1/:path", "destination": "/1/" },
-    { "source": "/2/:path", "destination": "/2/" }
+    { "source": "/2/:path", "destination": "/2/" },
+    { "source": "/3/:path", "destination": "/3/" },
+    { "source": "/4/:path", "destination": "/4/" }
   ]
 }
