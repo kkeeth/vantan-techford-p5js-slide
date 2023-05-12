@@ -10,7 +10,12 @@ body {
 header {
   justify-content: center;
   place-items: center;
+  margin: 0;
   padding: 1rem 3rem;
+}
+
+header img {
+  width: 100%;
 }
 
 nav {
