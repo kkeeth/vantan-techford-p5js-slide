@@ -19,3 +19,4 @@ cp slides/17.md ./ && slidev build -o dist/17 --base /17/ 17.md && rm 17.md
 cp slides/18.md ./ && slidev build -o dist/18 --base /18/ 18.md && rm 18.md
 
 cp index.html dist/index.html
+cp styles/* dist/assets
