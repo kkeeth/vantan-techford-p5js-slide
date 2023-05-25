@@ -45,9 +45,14 @@ header nav img {
  * News
  */
 section.news {
-  padding-left: 3rem;
   padding-right: 0;
   background: #e3f6f5;
+}
+
+@media screen and (max-width: 768px) {
+  section.news {
+    padding-left: 3rem;
+  }
 }
 
 section.news .container {
@@ -56,6 +61,12 @@ section.news .container {
   justify-content: space-between;
   width: 100%;
   text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+  section.news .container {
+    max-width: 992px;
+  }
 }
 
 section.news .container .right {
